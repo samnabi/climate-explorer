@@ -1,0 +1,93 @@
+body {
+	background: rgb(238,214,174);
+	background: radial-gradient(circle, rgba(238,214,174,1) 0%, rgba(148,225,233,1) 100%); 
+}
+
+body,
+input,
+button {
+	font-family: didot, garamond, palatino, 'times new roman', serif;
+}
+
+h1 {
+	font-size: 1em;
+	font-weight: normal;
+	text-align: center;
+	font-style: italic;
+	letter-spacing: 0.2em;
+}
+
+form,
+fieldset {
+	display: flex;
+	gap: 1em;
+	justify-content: center;
+}
+
+fieldset {
+	border: 1px solid rgba(74,112,116,0.5);
+}
+
+legend {
+	font-weight: bold;
+}
+
+input[type="number"] {
+	width: 4em;
+}
+
+button {
+	margin-top: -0.2em;
+	font-weight: bold;
+	padding: 0.2em 0.5em;
+}
+
+table {
+	margin: 2em auto;
+	border-collapse: collapse;
+	text-align: center;
+	border-top: 1px solid rgba(74,112,116,0.5);
+}
+
+th, td {
+	padding: 0.2em 0.5em;
+	border-bottom: 1px solid rgba(74,112,116,0.5);
+}
+
+th[role="columnheader"]:after {
+	content: "▼";
+	color: rgba(0,0,0,0.5);
+	font-size: 0.6em;
+	line-height: 1rem;
+	margin-left: 0.25em;
+}
+
+th[aria-sort="ascending"]:after {
+	content: "▲";
+}
+
+th:nth-child(2):after,
+th:nth-child(3):after {
+	display: none;
+}
+
+th:first-child,
+td:first-child {
+	text-align: left;
+}
+
+section {
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+p {
+	max-width: 60em;
+	line-height:  1.5;
+	margin: 0 auto 2em;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+}
