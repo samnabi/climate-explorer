@@ -16,11 +16,11 @@
 			<legend>Find a city where...</legend>
 			<label>
 				It never gets colder than
-				<input autofocus type="number" name="min" value="<?= $_GET['min'] ?>"> ºC,
+				<input autofocus type="number" name="min" value="<?= $_GET['min'] ?? '15' ?>"> ºC,
 			</label>
 			<label>
 				and it never gets warmer than
-				<input type="number" name="max" value="<?= $_GET['max'] ?>"> ºC
+				<input type="number" name="max" value="<?= $_GET['max'] ?? '30' ?>"> ºC
 			</label>
 			<button>Go</button>
 		</fieldset>
